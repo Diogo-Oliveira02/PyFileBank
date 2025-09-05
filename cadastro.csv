@@ -1,0 +1,91 @@
+﻿nome;banco;agencia;conta;saldo_inicial
+Miguel Souza;Santander;7688;75478-8;9.0
+Gabriel Costa;Banco do Brasil;2626;81239-1;17082.45
+Vitória Santos;Bradesco;1347;15987-3;5630.10
+Davi Martins;Caixa Econômica Federal;881;46552-0;8375.00
+Lucas Lima;Itaú Unibanco;4567;98765-4;18300.75
+Mariana Ferreira;Nubank;1;1234567-8;9500.0
+Rafael Almeida;Banco Inter;1;7654321-0;11845.90
+Júlia Barbosa;Sicoob;3001;89123-5;3420.00
+Bruno Ribeiro;BTG Pactual;2002;54321-9;35800.00
+Leonardo Melo;Banco Safra;77;67890-1;34710.60
+Helena Rodrigues;Caixa Econômica Federal;2143;11223-3;12537.10
+Arthur Oliveira;Bradesco;8877;66554-4;7650.00
+Alice Silva;Itaú Unibanco;99;88776-6;24200.00
+Theo Pereira;Banco do Brasil;2211;00998-8;14400.00
+Laura Gomes;Santander;4433;22113-3;9900.00
+Isabella Carvalho;Nubank;1;9876543-2;12023.34
+Gael Nunes;Banco Inter;1;5566778-8;7539.37
+Enzo Mendes;Sicoob;4002;88990-0;2623.45
+Sofia Costa;BTG Pactual;1001;22334-4;45000.00
+Heitor Lopes;Banco Safra;11;77665-5;54000.00
+Valentina Lima;Caixa Econômica Federal;4321;98765-4;13632.10
+João Santos;Bradesco;8765;43210-9;7666.67
+Pedro Alves;Itaú Unibanco;2345;67890-1;20445.67
+Camila Rodrigues;Banco do Brasil;6543;21098-7;14654.32
+Gustavo Ferreira;Santander;8901;23456-7;10573.45
+Manuela Martins;Nubank;1;8765432-1;11234.56
+Beatriz Ribeiro;Banco Inter;1;3456789-0;8312.34
+Felipe Barbosa;Sicoob;5003;77889-9;5728.90
+Eduardo Melo;BTG Pactual;3003;44556-6;56932.10
+Larissa Almeida;Banco Safra;88;99001-1;37134.56
+Miguel Oliveira;Caixa Econômica Federal;1234;56789-0;11221.11
+Gabriel Silva;Bradesco;5678;12345-6;8008.88
+Vitória Pereira;Itaú Unibanco;9012;34567-8;22000.00
+Davi Gomes;Banco do Brasil;3456;78901-2;17332.66
+Lucas Costa;Santander;7890;12345-6;12198.23
+Mariana Santos;Nubank;1;66554-4;11700.00
+Rafael Souza;Banco Inter;1;88776-6;10120.00
+Júlia Lima;Sicoob;3001;12345-6;4860.00
+Bruno Rodrigues;BTG Pactual;4004;33221-1;70000.77
+Leonardo Ferreira;Banco Safra;99;88776-6;61110.55
+Helena Alves;Caixa Econômica Federal;9876;54321-0;11818.31
+Arthur Martins;Bradesco;5432;10987-6;9000.99
+Alice Ribeiro;Itaú Unibanco;1098;76543-2;24926.24
+Theo Barbosa;Banco do Brasil;7654;32109-8;17889.54
+Laura Melo;Santander;3210;98765-4;10101.34
+Isabella Almeida;Nubank;1;4567890-1;17110.55
+Gael Carvalho;Banco Inter;1;6543210-9;8000.88
+Enzo Nunes;Sicoob;7005;22113-3;4000.44
+Sofia Mendes;BTG Pactual;5005;11002-2;88000.00
+Valentina Costa;Caixa Econômica Federal;4433;22110-0;12600.00
+João Oliveira;Bradesco;6655;44332-2;10450.00
+Pedro Silva;Itaú Unibanco;8877;66554-4;18900.00
+Camila Pereira;Banco do Brasil;2211;88776-6;16200.00
+Gustavo Gomes;Santander;4433;00998-8;11550.00
+Manuela Santos;Nubank;1;66554-4;12420.00
+Beatriz Souza;Banco Inter;1;22113-3;8280.00
+Felipe Lima;Sicoob;8006;11224-4;6380.00
+Eduardo Rodrigues;BTG Pactual;6006;99887-7;63000.00
+Larissa Ferreira;Banco Safra;22;55443-3;40500.00
+Miguel Alves;Caixa Econômica Federal;1122;77665-5;13200.00
+Gabriel Martins;Bradesco;3344;99887-7;7200.00
+Vitória Ribeiro;Itaú Unibanco;5566;11223-3;20700.00
+Davi Barbosa;Banco do Brasil;7788;33445-5;18700.00
+Lucas Melo;Santander;9900;55667-7;10350.00
+Mariana Almeida;Nubank;1;88776-6;12050.00
+Rafael Carvalho;Banco Inter;1;44332-2;10780.00
+Júlia Nunes;Sicoob;9007;00998-8;5580.00
+Bruno Mendes;BTG Pactual;7007;66554-4;67500.00
+Leonardo Lopes;Banco Safra;33;22113-3;55000.00
+Helena Costa;Caixa Econômica Federal;6655;44332-2;11700.00
+Isabella Santos;Nubank;1;44332-2;15400.00
+Gael Souza;Banco Inter;1;66554-4;8640.00
+Enzo Lima;Sicoob;1008;88776-6;5400.00
+Sofia Rodrigues;BTG Pactual;8008;00998-8;79200.00
+Heitor Ferreira;Banco Safra;44;44332-2;43200.00
+Valentina Alves;Caixa Econômica Federal;2233;66554-4;11250.00
+João Martins;Bradesco;4455;88776-6;8250.00
+Pedro Ribeiro;Itaú Unibanco;6677;00998-8;21600.00
+Camila Barbosa;Banco do Brasil;8899;22113-3;13500.00
+Gustavo Melo;Santander;11;44332-2;11000.00
+Manuela Almeida;Nubank;1;66554-4;12150.00
+Beatriz Carvalho;Banco Inter;1;88776-6;8460.00
+Felipe Nunes;Sicoob;2009;00998-8;6160.00
+Eduardo Mendes;BTG Pactual;9009;22113-3;61200.00
+Larissa Lopes;Banco Safra;55;44332-2;38700.00
+Miguel Costa;Caixa Econômica Federal;3344;66554-4;12650.00
+Gabriel Oliveira;Bradesco;5566;88776-6;6300.00
+Vitória Silva;Itaú Unibanco;7788;00998-8;22500.00
+Davi Pereira;Banco do Brasil;9900;22113-3;15400.00
+Lucas Gomes;Santander;1122;44332-2;8550.00
