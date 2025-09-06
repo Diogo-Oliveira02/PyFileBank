@@ -13,7 +13,7 @@ try:
             clientes[chave] = linha
 except FileNotFoundError:
     print("Arquvo csv não encontrado!")
-    
+
 # Salva todos os clientes no arquivo CSV, sobrescrevendo os dados antigos
 def alterar_saldo_csv():
     with open('cadastro.csv', 'w', newline='', encoding='utf-8-sig') as FileCSV:
@@ -21,7 +21,7 @@ def alterar_saldo_csv():
         escrever_arquivo.writeheader()
         for cliente in clientes.values():
             escrever_arquivo.writerow(cliente)
-
+            
 def exibir_menu():
     print("""
         ========== Banco Digital ==========
