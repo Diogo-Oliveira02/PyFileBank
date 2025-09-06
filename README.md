@@ -5,7 +5,7 @@ Este projeto é um trabalho de faculdade com o objetivo de **aprender a manipula
 Ele simula um sistema de banco digital simples, permitindo que o usuário faça depósitos, saques, transferências, 
 consulte saldo e visualize extratos bancários.
 
----
+
 
 ## Funcionalidades
 
@@ -17,7 +17,7 @@ consulte saldo e visualize extratos bancários.
 - Visualizar extrato bancário (armazenado em arquivo TXT)
 - Registro de transações com data e hora (armazenado em arquivo TXT)
 
----
+
 
 ## Tecnologias Utilizadas
 
