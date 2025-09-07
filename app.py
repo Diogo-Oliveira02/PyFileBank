@@ -21,7 +21,19 @@ def alterar_saldo_csv():
         escrever_arquivo.writeheader()
         for cliente in clientes.values():
             escrever_arquivo.writerow(cliente)
-            
+
+# Função que envia as operação feito pelo usuario para o arquivo TXT 
+def enviar_para_extrato(nome1, operacao, valor, nome2):
+    data_hora = datetime.now().strftime('[%d/%m/%Y][%H:%M]')
+    try:
+        with open ('extrato.txt', 'a', encoding="utf-8-sig") as ExtractFile:
+            if (operacao == "depositou") or (operacao == "sacou"):
+                ExtractFile.write(f"{data_hora};{nome1};{operacao};{str(valor)}")
+            else:
+                ExtractFile.write(f"{data_hora};{nome1};{operacao};{str(valor)};{nome2}")
+    except FileNotFoundError:
+        print("Arquvo .txt não encontrado!")
+
 def exibir_menu():
     print("""
         ========== Banco Digital ==========
@@ -32,3 +44,4 @@ def exibir_menu():
         [5] - Consulta Saldo
         [0] - Sair
     """)
+
