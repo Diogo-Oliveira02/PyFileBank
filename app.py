@@ -12,7 +12,7 @@ try:
             chave = linha["nome"]
             clientes[chave] = linha
 except FileNotFoundError:
-    print("Arquvo csv não encontrado!")
+    print("Arquvo .csv não encontrado!")
 
 # Salva todos os clientes no arquivo CSV, sobrescrevendo os dados antigos
 def alterar_saldo_csv():
