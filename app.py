@@ -33,6 +33,15 @@ def enviar_para_extrato(nome1, operacao, valor, nome2):
                 ExtractFile.write(f"{data_hora};{nome1};{operacao};{str(valor)};{nome2}")
     except FileNotFoundError:
         print("Arquvo .txt não encontrado!")
+        
+def consulta_saldo(id):
+    if id not in clientes:
+        print("\nCliente não encontrado!\n")
+    else:
+        print(f"""
+            Nome:  {clientes[id]["nome"]}
+            Saldo: {clientes[id]["saldo_inicial"]}
+        """)
 
 def exibir_menu():
     print("""
@@ -44,4 +53,18 @@ def exibir_menu():
         [5] - Consulta Saldo
         [0] - Sair
     """)
+
+def depositar_valor(id_cliente,valor_depoisito):
+    if not id_cliente in clientes:
+        print("\nCliente não encontrado!\n") 
+    elif (valor_depoisito <= 0):
+        print("\nValor deve ser maior que zero!\n")
+    else:
+        if float(clientes[id_cliente]["saldo_inicial"]) < 10:
+            print("Saldo deve ser maior que R$10,00")
+        else: 
+            clientes[id_cliente]["saldo_inicial"] = float(clientes[id_cliente]["saldo_inicial"]) + valor_depoisito
+            enviar_para_extrato(id_cliente,"deposito",valor_depoisito,None)
+            alterar_saldo_csv()
+            consulta_saldo(id_cliente)
 
