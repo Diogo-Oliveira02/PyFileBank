@@ -67,4 +67,16 @@ def depositar_valor(id_cliente,valor_depoisito):
             enviar_para_extrato(id_cliente,"deposito",valor_depoisito,None)
             alterar_saldo_csv()
             consulta_saldo(id_cliente)
-
+def sacar_valor(id_cliente,valor_sacar):
+    if not id_cliente in clientes:
+        print("\nCliente não encontrado!\n")
+    elif valor_sacar <= 0:
+        print("\nValor deve ser maior que zero!\n")
+    else:
+        if float(clientes[id_cliente]["saldo_inicial"]) < 10:
+            print("Saldo deve ser maior que R$10,00")
+        else:
+            clientes[id_cliente]["saldo_inicial"] = float(clientes[id_cliente]["saldo_inicial"]) + valor_sacar
+            enviar_para_extrato(id_cliente,"saque",valor_sacar,None)
+            alterar_saldo_csv()
+            consulta_saldo(id_cliente)
