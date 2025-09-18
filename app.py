@@ -80,3 +80,22 @@ def sacar_valor(id_cliente,valor_sacar):
             enviar_para_extrato(id_cliente,"saque",valor_sacar,None)
             alterar_saldo_csv()
             consulta_saldo(id_cliente)
+def trasferir_valor(id_cliente_pagador, id_cliente_recebedor,valor_transferencia):
+    if id_cliente_pagador not in clientes:
+            print("\nCliente pagador não encontrado!\n")
+    elif id_cliente_recebedor not in clientes:
+            print("\nCliente recebedor não encontrado!\n")
+    else:
+        if valor <= 0:
+            print("\nValor deve ser maior que zero!\n")
+        else:
+            if float(clientes[id_cliente_pagador]["saldo_inicial"]) < 10:
+                print("Saldo deve ser maior que R$10,00")
+            else:
+                clientes[id_cliente_pagador]["saldo_inicial"] = float(clientes[id_cliente_pagador]["saldo_inicial"]) - valor
+                clientes[id_cliente_recebedor]["saldo_inicial"] = float(clientes[id_cliente_recebedor]["saldo_inicial"]) + valor
+                enviar_para_extrato(id_cliente_pagador,"transferiu",valor_transferencia,id_cliente_recebedor)
+                alterar_saldo_csv()
+                consulta_saldo(id_cliente_pagador)
+                print("\n============= TRANSFERIU PARA =============\n")
+                consulta_saldo(id_cliente_recebedor)
