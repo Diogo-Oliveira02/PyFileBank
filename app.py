@@ -99,6 +99,22 @@ def trasferir_valor(id_cliente_pagador, id_cliente_recebedor,valor_transferencia
                 consulta_saldo(id_cliente_pagador)
                 print("\n============= TRANSFERIU PARA =============\n")
                 consulta_saldo(id_cliente_recebedor)
+def consulta_extrato(id_cliente):
+    clientes = {}
+    with open('extrato.txt', "r", encoding="utf-8") as extrato:
+        for linha in extrato:
+            
+            valores = linha.strip().split(";")
+            registro = list(valores) 
+            nome = registro[1]
+
+            # Garante que a chave é uma lista e então adiciona
+            clientes.setdefault(nome, []).append(registro)
+
+    if id_cliente is nome:
+        print("Cliente não enctrado!")
+    else: 
+        print(clientes[id_cliente])
 while True:
     exibir_menu()
     opcao_menu = int(input("Aperte o numero correspondete que deja fazer a operação --->"))
