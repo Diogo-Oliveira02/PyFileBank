@@ -99,3 +99,30 @@ def trasferir_valor(id_cliente_pagador, id_cliente_recebedor,valor_transferencia
                 consulta_saldo(id_cliente_pagador)
                 print("\n============= TRANSFERIU PARA =============\n")
                 consulta_saldo(id_cliente_recebedor)
+while True:
+    exibir_menu()
+    opcao_menu = int(input("Aperte o numero correspondete que deja fazer a operação --->"))
+    match opcao_menu:
+        case 1:
+            id = input("Digite o nome da conta que deseja depositar >>")
+            valor = float(input("Digite o valor que deseja depositar: "))
+            depositar_valor(id,valor)
+        case 2:
+            id = input("Digite o nome da conta que deseja sacar >>")
+            valor = float(input("Digite o valor que deseja sacar: "))
+            sacar_valor(id,valor)
+        case 3:
+            id_pagador = input("Digite o nome do cliente que ira ser o pagador >>")
+            id_recebedor = input("Digite o nome do cliente que ira receber >>")
+            valor = float(input("Qual o valor que deseja trasferir: "))
+            trasferir_valor(id_pagador,id_recebedor,valor)
+        case 4:
+            id = input("Digite o nome do cliente que deseja ver o extrato bancario >>")
+            consulta_extrato(id)
+        case 5:
+            id = input("Digite o nome que seja consultar o saldo >>")
+            consulta_saldo(id)
+        case 0:
+            break
+        case _:
+            print("Operação não valida!\n")
