@@ -1,1 +1,1 @@
-data_hora;cliente1;operacao;valor;cliente2
+﻿
